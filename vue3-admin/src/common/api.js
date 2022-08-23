@@ -129,3 +129,6 @@ export function postPptContentEdit(data) {
     return request.axiosObj().post("ppt/content-edit", data)
 }
 
+export function getImageList(data) {
+    return request.axiosObj().get("image/list", data)
+}

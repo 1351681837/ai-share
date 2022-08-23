@@ -10,7 +10,7 @@ import (
 
 func InitRouter() (r *gin.Engine) {
 	r = gin.New()
-	r.Use(gin.Logger()).Use(gin.Recovery())
+	r.Use(gin.Logger()).Use(gin.Recovery()).Use(middleware.Cors())
 	gin.SetMode(config.App.RunMode)
 
 	r.GET("/api/auth", api.Login)

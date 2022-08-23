@@ -65,6 +65,11 @@ const routes = [
                 name: 'Content',
                 component: () => import('./views/Content.vue'),
             },
+            {
+                path: '/image-list',
+                name: 'ImageList',
+                component: () => import('./views/material/ImageList.vue'),
+            },
         ],
     },
     {

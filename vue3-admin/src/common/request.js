@@ -9,7 +9,7 @@ class RequestService {
         let that = this
         that.requestList = []
         that.axios = axios.create({
-            baseURL: import.meta.env.VITE_APP_API, // 所有的请求地址前缀部分
+            baseURL: import.meta.env.VITE_APP_API+'/admin/', // 所有的请求地址前缀部分
             timeout: 60000, // 请求超时时间毫秒
             withCredentials: false, // 异步请求携带cookie
             headers: {
