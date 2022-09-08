@@ -130,5 +130,41 @@ export function postPptContentEdit(data) {
 }
 
 export function getImageList(data) {
-    return request.axiosObj().get("image/list", data)
+    return request.get("image/list", data)
+}
+
+export function getImageInfo(data) {
+    return request.get("image/info", data)
+}
+
+export function postImageEdit(data) {
+    return request.post("image/add", data)
+}
+
+export function getVideoTutorialCateList(data) {
+    return request.get("video-tutorial-cate/list", data)
+}
+
+export function getVideoTutorialCateInfo(data) {
+    return request.get("video-tutorial-cate/info", data)
+}
+
+export function postVideoTutorialCateEdit(data) {
+    return request.post("video-tutorial-cate/edit", data)
+}
+
+export function getVideoTutorialList(data) {
+    return request.get("video-tutorial/list", data)
+}
+
+export function getVideoTutorialInfo(data) {
+    return request.get("video-tutorial/info", data)
+}
+
+export function postVideoTutorialEdit(data) {
+    return request.post("video-tutorial/edit", data)
+}
+
+export function getVideoTutorialCateAllName(data) {
+    return request.get("video-tutorial-cate/all-name", data)
 }

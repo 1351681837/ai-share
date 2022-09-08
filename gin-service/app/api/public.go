@@ -71,7 +71,7 @@ func GetQiNiuWebToken(c *gin.Context) {
 			"key":      key,
 			"token":    putPolicy.UploadToken(mac),
 			"domain":   domain,
-			"up_serve": "https://upload-z2.qiniup.com",
+			"up_serve": "https:///upload.qiniup.com",
 		}
 	}
 	ResponseSuccess(c, data)

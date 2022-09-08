@@ -27,7 +27,7 @@ CREATE TABLE `a_menu`
     `created_at`  timestamp NULL DEFAULT NULL,
     `updated_at`  timestamp NULL DEFAULT NULL,
     PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='菜单表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4  COMMENT='菜单表';
 
 
 -- ----------------------------
@@ -67,7 +67,7 @@ CREATE TABLE `a_user`
     PRIMARY KEY (`id`) USING BTREE,
     UNIQUE KEY `oid_idx` (`unionid`,`openid`) USING BTREE,
     KEY          `u_idx` (`user_name`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户表';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4  COMMENT='用户表';
 
 CREATE TABLE `a_user_contact`
 (
@@ -76,7 +76,7 @@ CREATE TABLE `a_user_contact`
     `superior_two` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '上级运营中心',
     `updated_at`   timestamp NULL DEFAULT NULL,
     PRIMARY KEY (`uid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='用户关系';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4  COMMENT='用户关系';
 
 CREATE TABLE `a_ppt_type`
 (
@@ -148,7 +148,7 @@ CREATE TABLE `a_ai_dou`
     `ai_dou`       int(11) NOT NULL DEFAULT '0' COMMENT '可用爱豆',
     `total_ai_dou` int(11) NOT NULL DEFAULT '0' COMMENT '累计爱豆',
     PRIMARY KEY (`uid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='爱豆表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4  COMMENT='爱豆表';
 
 CREATE TABLE `a_ai_dou_log`
 (

@@ -7,6 +7,7 @@ const props = defineProps(['row'])
 const mMark = ref(inject('mMark'))
 
 const handleLock = (row) => {
+  console.log( mMark)
   let is_lock = row.is_lock === 1 ? 2 : 1
   postLock(row.id, is_lock, mMark.value).then(res => {
     row.is_lock = is_lock

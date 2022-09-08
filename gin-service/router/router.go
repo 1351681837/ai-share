@@ -87,7 +87,19 @@ func InitRouter() (r *gin.Engine) {
 		adminRoute.POST("user/recharge-ai-dou", admin.RechargeAiDou)
 
 		adminRoute.GET("system-info/detail", admin.SystemInfoDetail)
-		adminRoute.POST("system-info/edit", admin.SystemInfoEdit)
+
+		adminRoute.GET("image/list", admin.ImageList)
+		adminRoute.POST("image/add", admin.ImageAdd)
+		adminRoute.GET("image/info", admin.ImageInfo)
+
+		adminRoute.GET("video-tutorial-cate/list", admin.VideoTutorialCateList)
+		adminRoute.GET("video-tutorial-cate/info", admin.VideoTutorialCateInfo)
+		adminRoute.GET("video-tutorial-cate/all-name", admin.VideoTutorialCateAllName)
+		adminRoute.POST("video-tutorial-cate/edit", admin.VideoTutorialCateEdit)
+
+		adminRoute.GET("video-tutorial/list", admin.VideoTutorialList)
+		adminRoute.GET("video-tutorial/info", admin.VideoTutorialInfo)
+		adminRoute.POST("video-tutorial/edit", admin.VideoTutorialEdit)
 	}
 
 	return r

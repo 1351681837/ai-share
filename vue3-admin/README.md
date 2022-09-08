@@ -7,7 +7,7 @@ yarn
 # 修改根环境变量文件内容
 
 # 运行
-yarn run dev
+~~yarn run dev~~
 
 ```
 

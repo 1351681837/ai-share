@@ -23,6 +23,7 @@ const menus = [
       {id: 22, name: 'PPT分类', path: '/ppt-type'},
       {id: 23, name: '图库列表', path: '/share-resource'},
       {id: 23, name: '图库分类', path: '/share-resource-type'},
+      {id: 24, name: '图片素材', path: '/image-list'},
     ],
   },
   {

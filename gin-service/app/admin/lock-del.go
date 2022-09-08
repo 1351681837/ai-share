@@ -16,6 +16,7 @@ func init() {
 	modelMaps["ppt"] = models.Ppt{}
 	modelMaps["menu"] = models.Menu{}
 	modelMaps["menu-group"] = models.MenuGroup{}
+	modelMaps["video-tutorial-cate"] = models.VideoTutorialCate{}
 }
 
 func DeleteModel(c *gin.Context) {

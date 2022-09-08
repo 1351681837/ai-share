@@ -70,6 +70,31 @@ const routes = [
                 name: 'ImageList',
                 component: () => import('./views/material/ImageList.vue'),
             },
+            {
+                path: '/image-add/:id?',
+                name: 'ImageAdd',
+                component: () => import('./views/material/ImageAdd.vue'),
+            },
+            {
+                path: '/video-tutorial-cate-list',
+                name: 'VideoTutorialCateList',
+                component: () => import('./views/video-tutorial-cate/Index.vue'),
+            },
+            {
+                path: '/video-tutorial-cate-edit/:id?',
+                name: 'VideoTutorialCateEdit',
+                component: () => import('./views/video-tutorial-cate/Edit.vue'),
+            },
+            {
+                path: '/video-tutorial-list',
+                name: 'VideoTutorialList',
+                component: () => import('./views/video-tutorial/Index.vue'),
+            },
+            {
+                path: '/video-tutorial-edit/:id?',
+                name: 'VideoTutorialEdit',
+                component: () => import('./views/video-tutorial/Edit.vue'),
+            },
         ],
     },
     {

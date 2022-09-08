@@ -32,6 +32,10 @@ var UploadScenes = map[string]map[string]string{
 		"desc":  "客服二维码",
 		"value": "customer_service_wx",
 	},
+	"1006": {
+		"desc":  "图片",
+		"value": "image",
+	},
 }
 
 var scenes = make(map[string]map[string]string)
